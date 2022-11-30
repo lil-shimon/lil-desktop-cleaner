@@ -3,6 +3,8 @@
 DIR="backups"
 
 cd ~/desktop
+desktop=`pwd`
+echo $desktop
 
 check_backup_exists() {
   if [ ! -d $DIR ];then
@@ -16,4 +18,11 @@ check_backup_exists() {
   fi
 }
 
+move_to_backup() {
+  for file in $desktop/*; do
+    echo $file
+  done
+}
+
 check_backup_exists
+move_to_backup
