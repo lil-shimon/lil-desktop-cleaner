@@ -20,7 +20,7 @@ check_backup_exists() {
 
 move_to_backup() {
   for file in $desktop/*; do
-    echo $file
+    mv $file ./$DIR
   done
 }
 
