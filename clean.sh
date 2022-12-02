@@ -21,6 +21,7 @@ check_backup_exists() {
 move_to_backup() {
   for file in $desktop/*; do
     mv $file ./$DIR
+    echo "掃除完了"
   done
 }
 
