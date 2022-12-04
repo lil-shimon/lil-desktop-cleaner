@@ -6,7 +6,7 @@ cd ~/desktop
 desktop=`pwd`
 
 check_backup_exists() {
-  if [ ! -d $DIR ];then
+  if [ ! -d $DIR ]; then
     echo "バックアップディレクトリが存在しません"
     mkdir $DIR
     if [ -d $DIR ]; then
