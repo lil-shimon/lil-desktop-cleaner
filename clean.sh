@@ -4,7 +4,6 @@ DIR="backups"
 
 cd ~/desktop
 desktop=`pwd`
-echo $desktop
 
 check_backup_exists() {
   if [ ! -d $DIR ];then
